@@ -1,5 +1,6 @@
 declare module 'react-native-ico-noto-emojis' {
     import { ReactNode } from 'react';
+    import { SvgProps, AdditionalProps } from 'react-native-svg';
 
     type iconNames = '1st-place-medal' |
       '2nd-place-medal' |
@@ -3405,7 +3406,7 @@ declare module 'react-native-ico-noto-emojis' {
       badge?: number | string | badgeTypeObj;
     }
 
-    const Icon: (props: IconProps) => ReactNode;
+    const Icon: (props: IconProps & SvgProps & AdditionalProps) => ReactNode;
 
     export { iconNames };
     export default Icon;
